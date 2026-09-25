@@ -1,4 +1,4 @@
-<div style="margin-right: 10pt;">
+<div>
     <figure>
         <img src="{{ include.img }}" width="170" height="170" style="object-fit: cover"/>
         <figcaption>
@@ -7,10 +7,12 @@
             {% else %}
             {{ include.name }}
             {% endif %}
+            {% if include.position != null %}
             <br>
             {{ include.position }}
-            <br>
+            {% endif %}
             {% if include.position2 != null %}
+            <br>
             {{ include.position2 }}
             {% endif %}
         </figcaption>
